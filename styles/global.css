@@ -13,10 +13,32 @@
   --text-color-secondary: #cbd5e1;
 
   --font-family: "Archivo", sans-serif;
+  /* the --text vars are for use with the short hand font */
+  --h1: 800 24px/135% var(--font-family);
+  --h2: 800 16px/140% var(--font-family);
+  --h3: 800 14px/140% var(--font-family);
+  --text-span: 500 14px/145% var(--font-family);
+  --text: 16px/140% var(--font-family);
+  --text-sm: 14px/160% var(--font-family);
 }
 
 body {
   font: var(--text);
   color: var(--text-color-primary);
   background-color: var(--bg-color);
+}
+
+h1,
+h2,
+h3 {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--brand-color-light);
 }
