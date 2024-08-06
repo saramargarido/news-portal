@@ -25,8 +25,19 @@
       position: absolute;
       bottom: 0;
       padding: 24px;
+
+      &:has(.text-lg) {
+        padding: 12px;
+      }
+
       h2 {
         margin-top: 8px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
       }
     }
   }
