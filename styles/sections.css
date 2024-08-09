@@ -1,5 +1,5 @@
 section header {
-  border-top: 1px sold var(--stroke-color);
+  border-top: 1px solid var(--stroke-color);
   padding-block: 12px 24px;
   font: var(--text-span);
 
@@ -54,12 +54,6 @@ section header {
 
       h2 {
         margin-top: 8px;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        -webkit-line-clamp: 3;
-        line-clamp: 3;
       }
     }
   }
